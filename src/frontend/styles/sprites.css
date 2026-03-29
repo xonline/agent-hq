@@ -1,0 +1,108 @@
+/* trigger-agents/src/frontend/styles/sprites.css */
+
+@keyframes idle-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-1px); }
+}
+
+@keyframes type {
+  0%,  50% { transform: translateY(0) rotate(0deg); }
+  25%       { transform: translateY(-3px) rotate(-4deg); }
+  75%       { transform: translateY(-1px) rotate(2deg); }
+}
+
+@keyframes error-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-2px); }
+  40%, 80% { transform: translateX(2px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+@keyframes code-scroll {
+  0%   { background-position: 0 0; }
+  100% { background-position: 0 8px; }
+}
+
+/* Role-specific working animations */
+
+/* James: Fast typing (keep existing type animation) */
+/* @keyframes james-type — same as type, inherited */
+
+/* CTO: Code-scroll flicker (tech lead intensity) */
+@keyframes cto-flicker {
+  0%, 100% { opacity: 1; transform: translateY(0) scaleX(0.98); }
+  20%      { opacity: 0.8; transform: translateY(-1px) scaleX(1); }
+  40%      { opacity: 1; transform: translateY(-2px) scaleX(0.98); }
+  60%      { opacity: 0.85; transform: translateY(-1px) scaleX(1); }
+  80%      { opacity: 1; transform: translateY(0) scaleX(0.98); }
+}
+
+/* CMO: Broadcast wave (smooth, outward messaging) */
+@keyframes cmo-broadcast {
+  0%, 100% { transform: translateY(0) scaleX(1); }
+  25%      { transform: translateY(-2px) scaleX(1.05); }
+  50%      { transform: translateY(-1px) scaleX(1); }
+  75%      { transform: translateY(-2px) scaleX(1.05); }
+}
+
+/* CFO: Tally count (methodical up-down movement, precise) */
+@keyframes cfo-tally {
+  0%, 100% { transform: translateY(0); }
+  25%      { transform: translateY(-3px); }
+  50%      { transform: translateY(1px); }
+  75%      { transform: translateY(-2px); }
+}
+
+/* COO: Steady rhythm (efficient, rhythmic bob) */
+@keyframes coo-rhythm {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-2px); }
+}
+
+/* CRO: Energetic bounce (growth/revenue energy) */
+@keyframes cro-bounce {
+  0%       { transform: translateY(0); }
+  25%      { transform: translateY(-4px); }
+  50%      { transform: translateY(0); }
+  75%      { transform: translateY(-3px); }
+  100%     { transform: translateY(0); }
+}
+
+/* CPO: Creative sway (side-to-side thinking) */
+@keyframes cpo-sway {
+  0%, 100% { transform: translateY(0) rotateZ(-1deg); }
+  25%      { transform: translateY(-1px) rotateZ(1deg); }
+  50%      { transform: translateY(-2px) rotateZ(-1.5deg); }
+  75%      { transform: translateY(-1px) rotateZ(1.5deg); }
+}
+
+/* CSAO: Slow deliberate rotation (strategic lean) */
+@keyframes csao-lean {
+  0%, 100% { transform: rotate(0deg) translateY(0); }
+  50%      { transform: rotate(2deg) translateY(-1px); }
+}
+
+/* CXO: Warm gentle pulse (customer care warmth) */
+@keyframes cxo-pulse {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50%      { transform: scale(1.02) translateY(-1px); }
+}
+
+/* QC: Precise left-right scan (quality inspection) */
+@keyframes qc-scan {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  25%      { transform: translateX(-2px) translateY(-1px); }
+  50%      { transform: translateX(2px) translateY(-1px); }
+  75%      { transform: translateX(-1px) translateY(0); }
+}
+
+/* Tony: Relaxed active (unique personality) */
+@keyframes tony-relax {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33%      { transform: translateY(-2px) rotate(-1deg); }
+  66%      { transform: translateY(-1px) rotate(1deg); }
+}

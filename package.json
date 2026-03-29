@@ -1,0 +1,41 @@
+{
+  "name": "agent-hq",
+  "version": "1.0.0",
+  "description": "Real-time AI agent monitoring dashboard — HQ for your Claude agent fleet",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && npm run build:frontend || true",
+    "build:frontend": "test -d src/frontend && cd src/frontend && vite build || echo 'Frontend dir not found, skipping'",
+    "dev": "tsx watch src/server.ts",
+    "dev:frontend": "cd src/frontend && vite",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:watch": "vitest --watch"
+  },
+  "dependencies": {
+    "@bull-board/api": "^6.9.0",
+    "@bull-board/express": "^6.9.0",
+    "bullmq": "^5.51.0",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "pg": "^8.20.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "terser": "^5.46.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vite": "^5.1.0",
+    "vitest": "^4.1.1"
+  }
+}
