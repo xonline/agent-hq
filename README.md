@@ -1,4 +1,4 @@
-# Agent HQ Dashboard
+# (Claude) Agent HQ Dashboard
 
 A real-time monitoring dashboard for a fleet of Claude AI agents. Watch your agents work, track token usage, browse job queues, and manage your task backlog — all from one clean interface.
 
