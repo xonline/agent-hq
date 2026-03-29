@@ -2,8 +2,6 @@
 
 A real-time monitoring dashboard for a fleet of Claude AI agents. Watch your agents work, track token usage, browse job queues, and manage your task backlog — all from one clean interface.
 
-![Dashboard](https://placeholder-screenshot.png)
-
 ## What It Is
 
 Agent HQ is a self-hosted web dashboard + Express API server that:
